@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='sugarcane.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sugarcane</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Select the symptoms which you have observed : </p>
+        <form method="post" action="/sugarcane_final">
+          <img src="{{ url_for('static', filename='yellow.png')}}" alt="Snow" style="width:50%"> <input type="checkbox" value="1" name="mycheckbox1"> Pale yellow leaves <hr>
+
+          <img src="{{ url_for('static', filename='shoot.png')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox2"> Drying of shoot/top <hr>
+
+          <img src="{{ url_for('static', filename='malform.png')}}" alt="Snow" style="width:50%"> <input type="checkbox" value="1" name="mycheckbox3"> Leaf malformation <hr>
+
+          <img src="{{ url_for('static', filename='whip.png')}}" alt="Snow" style="width:50%" > <input type="checkbox" value="1" name="mycheckbox4"> Black whiplike structure at apex <hr>
+
+          <center><input class="ready-btn btn btn-success" type="submit" value="Check now !"/></center>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+{% endblock %}

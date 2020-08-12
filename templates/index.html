@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='agri.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Agro-Disease Predictor</h1>
+            <span class="subheading">Agricultural Web Portal For Crop Disease Prediction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h5 class="post-subtitle">
+              Crop diseases have the potential to cause devastating epidemics that threaten the world's food supply and vary widely in their dispersal pattern, prevalence, and severity. It remains unclear what the impact disease will have on sustainable crop yields in the future. Agricultural stakeholders are increasingly under pressure to adapt their decision-making to make more informed and efficient use of irrigation water, fertilizers, and pesticides. 
+              <p> In this website, you will be able to find the cure for disease of crops which include cotton, wheat and sugarcane</p>
+            </h5>
+            <center><img src="{{ url_for('static', filename='map.jpg')}}" alt="Snow" style="width:100%"></center>
+          </a>
+        </div>
+        <hr>
+        
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+{% endblock %}

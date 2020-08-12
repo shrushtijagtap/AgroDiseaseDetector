@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='wheat.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Wheat</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Wheat (species of Triticum) is a cereal grain. People eat it most often in the form of bread. It is a kind of grass whose fruit is a "head of wheat" with edible seeds. It was first grown in the Levant, a region of the Near East. Now it is cultivated worldwide.</p>
+        <p>Wheat grain is a staple food used to make flour for leavened, flat and steamed breads, biscuits, cookies, cakes, breakfast cereal, pasta, noodles, couscous. It can also be fermented to make ethanol, for alcoholic drinks, or biofuel.</p>
+        <p>Great Plains wheat production can be affected by a number of diseases caused by viruses, fungi, and bacteria. While many of these were once of great concern to Great Plains producers, varietal resistance, cultural practices and effective pesticides have decreased the severity and incidence of disease. Those still of econom- ic concern across the Great Plains include take-all, barley yellow dwarf virus, wheat streak mosaic virus, High Plains virus, Triticum mosaic virus, wheat soilborne mosaic virus, root rots, bunts and smuts, and rust diseases.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+        <form action = "/wheat_sym" method = "post">
+                 <p><input class="ready-btn btn btn-success" type = "submit" value = "Check now ! " /></p>
+        </form>
+      </center>
+      </div>
+    </div>
+</div>
+
+  <hr>
+
+
+<div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='wheat_y.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Yield</h3></center>
+      </div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='wheat_a.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Area under Irrigation</h3></center>
+      </div>
+</div>
+
+ <hr>
+{% endblock %}

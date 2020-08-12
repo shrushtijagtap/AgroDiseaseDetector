@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='sugarcane.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sugarcane</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Sugarcane (Saccharum officinarum) is an important crop in tropical and subtropical regions, and many other C4 species are used for grain, vegetables, and forage.</p>
+        <p>Sucrose, extracted and purified in specialized mill factories, is used as raw material in the food industry or is fermented to produce ethanol. Sugarcane is the world's largest crop by production quantity, with 1.9 billion tonnes produced in 2016, and Brazil accounting for 41% of the world total. In 2012, the Food and Agriculture Organization estimated it was cultivated on about 26 million hectares (64 million acres), in more than 90 countries.</p>
+        <p>Matching with long diversity of conditions under which sugarcane is grown in the world, there is wide spectrum of pests and diseases which have come to acquire a place of priority for control on regional or inter-regional basis due to the agro-climatic management conditions associated with the area.</p>
+      </div>
+    </div>
+  </div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+        <form action = "/sugarcane_sym" method = "post">
+                 <p><input class="ready-btn btn btn-success" type = "submit" value = "Check now ! " /></p>
+        </form>
+        </center>
+      </div>
+    </div>
+</div>
+
+ <hr>
+
+<div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='sugar_y.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Yield</h3></center>
+      </div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='sugar_a.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Area under Irrigation</h3></center>
+      </div>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='cotton.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Cotton</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Select the symptoms which you have observed : </p>
+        <form method="POST" action="/cotton_final">
+          <img src="{{ url_for('static', filename='curl.png')}}" alt="Snow"  style="width:50%" style="width:50%"> <input type="checkbox" value="1" name="mycheckbox1"> Curl down leaves <hr>
+
+          <img src="{{ url_for('static', filename='leaf.jpg')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox2"> Yellowish/Brownish leaves <hr>
+
+          <img src="{{ url_for('static', filename='sticky.png')}}" alt="Snow" style="width:50%" > <input type="checkbox" value="1" name="mycheckbox3"> Sticky cotton<hr>
+
+          <img src="{{ url_for('static', filename='rosetted.jpg')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox4"> Rosetted flower<hr>
+
+          <img src="{{ url_for('static', filename='defoil.jpg')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox5"> Defoilation of leaves<hr>
+
+          <img src="{{ url_for('static', filename='buds.jpg')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox6"> Shedding of buds<hr>
+
+          <img src="{{ url_for('static', filename='bugs.jpg')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox7"> Bugs<hr>
+
+          <center><input class="ready-btn btn btn-success" type="submit" value="Check now !"/></center>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  {% endblock %}

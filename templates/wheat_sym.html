@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='wheat.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Wheat</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+   <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Select the symptoms which you have observed : </p>
+        <form method="POST" action="/wheat_final">
+          <img src="{{ url_for('static', filename='uredinia.png')}}" alt="Snow" style="width:50%" > <input type="checkbox" value="1" name="mycheckbox1"> Uredinia present <hr>
+
+          <img src="{{ url_for('static', filename='kernel.png')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox2"> Grain kernel replaced with masses<hr>
+
+          <img src="{{ url_for('static', filename='spikes.png')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox3"> Blackened appearance of spikes<hr>
+
+          <img src="{{ url_for('static', filename='damp.png')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox4"> Damping off of seedling<hr>
+
+          <img src="{{ url_for('static', filename='spore.png')}}" alt="Snow"  style="width:50%"> <input type="checkbox" value="1" name="mycheckbox5"> Black coloured spores<hr>
+
+          <center><input class="ready-btn btn btn-success" type="submit" value="Check now !"/></center>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <hr>
+  {% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='sugarcane.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sugarcane</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+         <h2>{{err}}</h2>
+          <p>Looks like the symptoms you have entered donot correspond to a particular disease </p>
+          <h5>Contact experts as soon as possible</h5>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+{% endblock %}

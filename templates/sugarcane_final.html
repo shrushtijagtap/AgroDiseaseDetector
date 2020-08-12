@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='sugarcane.png')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sugarcane</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Details :</p>
+          <p>Disease name : <p>
+          <h2>{{disease}}</h2>
+          <p>Scientific name : <p>
+          <h5>{{s_name}}</h5>
+          <p>Symptoms : <p>
+          <h5>{{symptoms}}</h5>
+          <p>Insecticide : <p>
+          <h4>{{cure}}</h4>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+{% endblock %}

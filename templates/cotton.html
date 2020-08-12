@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='cotton.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Cotton</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Cotton is the collective name given to four species of plants in the genus Gossypium, Gossypium hirsutum, Gossypium barbadense, Gossypium arboreum and Gossypium herbaceum which are perennial shrubs in the family Malvaceae grown for the fluffy fiber which protects the seeds of the plant. G. hirsutum accounts for approximately 90% of world wide cotton production today. </p>
+          <p>Cotton plants possess a main stem giving rise to several branches at the top. The leaves of the plant are spirally arranged on the branches, have long petioles and have 3–5 triangular lobes. The plant produces a single flower on each axillary branch which can be red-purple, yellow or white in color and forms a leathery, oval seed capsule, or 'boll' which is 2–6 cm (0.8–2.4 in) long. Mature bolls will usually split open to reveal the characteristic white cotton fibers and the seed. The cotton plant can reach heights of 1–1.5 m (3.3–4.9 ft) and is usually cultivated as an annual, surviving only one growing season. Cotton may also be referred to as tree cotton and its center of origin is unknown although the plant has diversified from Mexico, north-east Africa and Arabia and Australia.</p>
+          <p>Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae. The fiber is almost pure cellulose. Under natural conditions, the cotton bolls will increase the dispersal of the seeds</p>
+         <p>The cotton crop sufffers from a number of diseases.</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <hr>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+          <form action = "/cotton_sym" method = "post">
+                 <p><input class="ready-btn btn btn-success" type = "submit" value = "Check now ! " /></p>
+          </form>
+        </center>
+      </div>
+    </div>
+</div>
+ <hr>
+
+<div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='cotton_y.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Yield</h3></center>
+      </div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <img src="{{ url_for('static', filename='cotton_a.png')}}" alt="Snow" style="width:100%">
+        <center><h3>Year vs Area under Irrigation</h3></center>
+      </div>
+</div>
+  {% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='cotton.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Cotton</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <h2>{{err}}</h2>
+          <p>Looks like the symptoms you have entered do not correspond to a particular disease </p>
+          <h5>Contact experts as soon as possible</h5>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  {% endblock %}
