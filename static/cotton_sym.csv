@@ -1,0 +1,15 @@
+Jassids,1,0,0,0,0,0,0,t1000000,Methyl demeton 25 EC (500/700 ml),Affected leaves curl downward turn yellowish then to brownish before drying and shedding,Amrasca biguttula biguttula
+Aphids,1,1,1,0,0,0,0,t1110000,Phosphamidon 100 EC (100-250 ml),Leaf crumpling and downward curling of leaves and sticky cotton due to deposits of honey dew on open bolls,Aphis gossypii
+Thrips,1,0,0,0,0,1,0,t1000010,Dimethoate 30 EC (500-700ml),Leaves of seedlings become wrinkled and distorted with white shiny patches and older crop presents rusty appearance from a distance,Thrips tabaci
+Whiteflies,1,1,0,0,0,0,0,t1100000,Methyl demeton 25 EC (500/700 ml),Upward curling of leaves with reduced plant vigourand lint contamination with honey dew and transmission of leaf curl virus disease,Bemisia tabaci
+Spotted & spiny bollworms,0,0,0,1,0,1,0,t0001010,Endosulfan 35 EC (2.5-3.0 litres), dried and withered away shoot and  twining of main stem with feeding holes in flower buds and bolls blocked by excrement,Earias vitella & E.insulana
+American bollworm,0,0,0,1,0,0,0,t0001000,Quinalphos 25 EC (2.5 to 3.0 litres),Small amount of webbing and larval frass and flaring of bracts and excessive shedding of buds and bolls,Helicoverpa armigera
+Pink bollworm,0,0,0,1,1,0,0,t0001100,Fenvalerate 20 EC (400-500ml),"""Rosetted"" bloom, pink larvae inside developing bolls with interloculi movement",Pectinophora gossypiella
+Red cotton bug,0,0,0,0,0,0,1,t0000001,Corgan 30 ml,Feed on developing and mature seeds stain the lint to typical yellow colour and reddish nymphs seen in aggregations around developing and open bolls,Dysdercus cingulatus
+Dusky cotton bug,0,0,0,0,0,1,1,t0000011,Novaluron 1000ml/ha,Associated with ripe seeds and all stages characterized by a powerful smell also discolour the lint f crushed,Oxycarenus hyalipennis
+Semi - looper,0,1,0,0,1,0,0,t0100100,Pyrethrins,Causes significant loss of leaf area to young plants and larvae with looping action are seen on plant parts.,Anomis flava
+Leaf roller,0,0,1,0,1,0,0,t0010100,Spinosad,Leaves are folded and larvae are seen in groups amidst fecal materials and severe infestation defoliates the whole plant,Syllepte derogata
+Spodoptera leafworm,1,0,0,0,1,0,0,t1000100,Fenvalerate 20 EC,Young larvae in groups skeletinise leaves and older larvae voraciously defoliate leaves,Spodoptera litura
+Grey weevil,0,0,0,0,1,0,0,t0000100,Padan,Marginal notching - off of leaves,Myllocerus subfasciatus
+Grass hopper,0,0,0,0,1,1,0,t0000110,Anthem Flex,Defoliation of leaves - partial or full,Crytocanthacris ranacea
+Stem weevil,0,1,1,0,0,1,0,t0110010,Carbofuran 3 G,Root damage by grubs kills young seedlings and gall like swelling seen on lower stem along with wilting of seedlings,Pempherulus affinis
